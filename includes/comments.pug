@@ -1,0 +1,73 @@
+//- includes/comments.pug
+// write a comment
+.write-comment
+    .grid.gridxs--full.grid--full.gridmd--1of2.gridlg--1of2.gridxl--1of2
+        .cell.write-comment-left
+            .write-comment-avatar
+                img(src='../../../assets/img/avatar1.png')
+        .cell.write-comment-right
+            | Write your comment here...
+    .reply-button
+        img(src='../../../assets/img/submit.png')
+
+//number of comments
+.comments-number
+    h5
+        | 3 Comments
+// Comments reply container
+.comments-container
+    .grid
+    .cell
+        // comment reply
+        .comments-comment
+            .grid
+                .cella
+                    .write-comment-avatar
+                        img(src='../../../assets/img/avatar2.png')
+                .cellb
+                    .comments-name
+                        h6
+                            span.comments Alfred Henderson
+                            br
+                            span.comments-days 4 days ago 
+            .grid.gridxs--full.grid--full.gridmd--full.gridlg--full.gridxl--full
+                .cell
+                    .comments-text
+                         | I'm just testing the comment section. I really like this car. I especially like the fact that it only costs $3M. That's amazing.
+            .reply
+                i.fa.fa-reply(aria-hidden='true')
+    .cell
+        // comment reply
+        .comments-comments-sub
+            .grid
+                .cella
+                    .write-comment-avatar
+                        img(src='../../../assets/img/avatar3.png')
+                .cellb
+                    .comments-sub-name
+                        h6
+                            span.comments Steven Clayton
+                            br
+                            span.comments-days 4 days ago
+            .grid.gridxs--full.grid--full.gridmd--full.gridlg--full.gridxl--full
+                .cell
+                    .comments-text
+                         | Thanks Alfred. I'm glad you like it. We decided to release it with $3M price since this is our first STRV M6 car. We're still learning
+    .cell
+        .comments-comment
+            .grid
+                .cella
+                    .write-comment-avatar
+                        img(src='../../../assets/img/avatar4.png')
+                .cellb
+                    .comments-name
+                        h6
+                            span.comments Jim Lindsey
+                            br
+                            span.comments-days 5 days ago 
+            .grid.gridxs--full.grid--full.gridmd--full.gridlg--full.gridxl--full
+                .cell
+                    .comments-text
+                         | Yeah! Attorney-client privilege. I mean, that's a big one.That's something I provide for you if i give up Pinkman, well, then you're gonna be asking, Saul gives 'em up pretty easy. What's to keep him from giving me up? Y'see, so, then where's the trust?
+            .reply
+                i.fa.fa-reply(aria-hidden='true')

@@ -1,0 +1,184 @@
+// Full container styles 
+.fullcontainer{position:relative; max-width:100%; margin:0 auto; }
+.fullcontainer:nth-child(1) {position:relative; width:100%;height:951px; background:   linear-gradient(
+      rgba(0, 0, 0, 0.0), 
+      rgba(0, 0, 0, 0.0)
+    ),
+url(../../../assets/img/hero.png)  no-repeat 40% center;}
+.fullcontainer:nth-child(2) {position:relative; width:100%;height:400px; background:#fff;
+                            @include small {height:900px;}
+                            @include xs{height:900px;}}
+.fullcontainer:nth-child(3) {position:relative; width:100%;height:400px; background:#f8f8f8;
+                            @include medium{height:450px;}
+                            @include small{height:680px;}
+                            @include xs{height:720px}}
+.fullcontainer:nth-child(4) {position:relative; width:100%;height:auto; background:#f8f8f8;}
+.fullcontainer:nth-child(5) {position:relative; width:100%;height:auto; padding:0 0 30px 0; background:#fff;}
+.fullcontainer:nth-child(6) {position:relative; width:100%;height:874px;  background:   linear-gradient(
+      rgba(0, 0, 0, 0.0), 
+      rgba(0, 0, 0, 0.0)
+    ),
+url(../../../assets/img/bottom.png) #2F2F35 no-repeat 40% center;}
+.svgdiv{height:100px; width:100%;background:#f8f8f8;}
+/* Big Triangle */
+svg#bigTriangleColor {
+	pointer-events: none;
+}
+
+#bigTriangleColor path {
+	fill: #fff;
+	stroke: #fff;
+    opacity:1;
+	stroke-width: 2;
+}
+svg#bigTriangleBottom {
+	pointer-events: none;
+}
+
+#bigTriangleBottom path {
+	fill: #fff;
+	stroke: #fff;
+    opacity:1;
+	stroke-width: 2;
+}
+
+
+// Section Headers
+
+.section-header{position:relative; max-width:970px; margin:0 auto; 
+@include medium {padding:30px 20px 0 20px;}
+@include small {padding:30px 20px 0 20px;}
+@include xs{padding:30px 20px 0 20px;}}
+.fullcontainer:nth-child(4) .section-header{position:relative; max-width:970px; margin:0 auto; padding: 30px 20px 110px 20px;}
+.fullcontainer:nth-child(5) .section-header{position:relative; max-width:970px; margin:0 auto; padding: 150px 20px 140px 20px;
+@include medium{padding: 30px 20px 120px 20px;}
+@include small{padding: 40px 20px 120px 20px;}
+@include xs{padding: 40px 20px 120px 20px;}
+}
+// About Section
+.block-wrap-container{position:absolute; 
+    top:0;
+    bottom:280px;
+    left:0;
+    right:0;
+    max-width:1060px; /* Assign a value */
+    min-height:500px; /* Assign a value */
+    height:auto;
+    margin:auto;  
+    @include medium{margin:0 auto; top:-132px;}
+    @include small{margin:0 10px 10px 10px; top:-522px; height:1100px;}
+    @include xs{margin:0 10px 10px 10px; top:-532px; height:1200px;}}
+.block-wrap{  padding:30px;
+    max-width:1060px; /* Assign a value */
+    min-height:500px; /* Assign a value */
+    margin:auto; background:#fff;
+    box-shadow: 0px 2px 34px 0px rgba(221,221,221,1); 
+    @include medium{margin:0 10px 10px 10px;top:-132px;}
+    @include small{top:-522px; height:1100px;}
+    @include xs{ top:-532px; height:1200px;}}
+    
+
+
+.hand{font-weight:bold;font-family: 'Roboto', sans-serif;width:100%;height:100px;text-align:right; font-size:214px; padding-top:100px; color: $largetext;
+        @include medium{text-align:right; padding-top:150px; font-size:126px;}
+        @include small{text-align:center; padding-top:140px; font-size:136px;}
+        @include xs{text-align:center; padding-top:157px; font-size:116px}}
+.made{font-weight:bold;font-family: 'Roboto', sans-serif;width:100%;height:100px;text-align:left; font-size:214px; padding-top:100px; color: $largetext;
+        @include medium{text-align:left; padding-top:150px; font-size:126px;}
+        @include small{text-align:center; padding-top:117px; font-size:136px;}
+        @include xs{text-align:center; padding-top:97px; font-size:116px;}}
+
+
+.about-text-wrap{height:auto; width:100%; border-right:1px solid #e7e7e7;
+                @include small{border-right:0px solid #e7e7e7; text-align:center;}
+                @include xs{border-right:0px solid #e7e7e7; text-align:center;}}
+.cell:nth-child(3) .about-text-wrap {border:none; }
+.about-text-wrap:after{ @include small{
+content:""; 
+  background: #f0f0f0; 
+  position: absolute; 
+  bottom: 0; 
+  left: 20%; 
+  height: 1px; 
+  width: 60%;
+    }}
+.cell:nth-child(3) .about-text-wrap:after{ @include small{
+content:""; 
+  background: #f0f0f0; 
+  position: absolute; 
+  bottom: 0; 
+  left: 20%; 
+  height: 0px; 
+  width: 60%;
+    }}
+.about-img {padding:20px 0px 30px 0; display:flex; justify-content:center;}
+.about-title{padding:0 30px;}
+.about-text{padding:20px 30px 0 30px; color:#d0d0d0;}
+
+// Numbers section
+.how-heading{display:flex; position:relative;z-index:2; padding-top:50px; justify-content:center;
+            @include small{padding:50px 0; margin-top:50px;text-align:center;}
+            @include xs{padding:50px 0; margin-top:50px;text-align:center;}
+            }
+.number-wrap{position:absolute; height:100px;padding-top:50px;width:100%;top:0; left:0; bottom:0; right:0; z-index:1; text-align:left; font-size:140px; font-weight:bold;font-family: 'Roboto', sans-serif;color:#e3e3e3;  
+            @include small{margin-top:50px;}
+            @include xs{margin-top:50px;}}
+.border{border-right:1px solid #f0f0f0;
+        }
+.border:after{
+    @include small{
+content:""; 
+  background: #f0f0f0; 
+  position: absolute; 
+  bottom: 0; 
+  left: 30%; 
+  height: 2px; 
+  width: 40%;
+    }
+     @include xs{
+content:""; 
+  background: #f0f0f0; 
+  position: absolute; 
+  bottom: 0; 
+  left: 30%; 
+  height: 2px; 
+  width: 40%;
+    }
+}
+
+.cell .border:nth-child(3){border-right:0px solid #ddd;
+                    @include small{border-bottom:0px solid #ddd;}
+                    @include xs{border-bottom:0px solid #ddd;}
+                    }
+
+.cell .border:nth-child(2){position:absolute; right:0; height:100px;border-right:1px solid #ddd; }
+.cell:nth-child(1) .number{@include xl{text-align:center;padding-right:140px;}
+        @include large{text-align:center;padding-right:140px;}
+        @include medium{text-align:center;padding-right:140px;}
+        @include small{margin-bottom:100px; padding-right:none;text-align:center;}
+        @include xs{margin-bottom:100px; padding-right:none;text-align:center;}}
+.cell:nth-child(2) .number{@include xl{text-align:center;padding-right:100px;}
+        @include large{text-align:center;padding-right:100px;}
+        @include medium{text-align:center;padding-right:100px;}
+        @include small{margin-bottom:100px; padding-right:none;text-align:center;}
+        @include xs{margin-bottom:100px; padding-right:none;text-align:center;}}
+.cell:nth-child(3) .number{@include xl{text-align:center;padding-right:60px;}
+        @include large{text-align:center;padding-right:60px;}
+        @include medium{text-align:center;padding-right:60px;}
+        @include small{margin-bottom:100px; padding-right:none;text-align:center;}
+        @include xs{margin-bottom:100px; padding-right:none;text-align:center;}}
+
+.strv-car-text{width:100%; height:230px;font-weight:bold;font-family: 'Roboto', sans-serif;text-align:center; font-size:180px; padding:60px 0 ; margin-bottom:10px; color: #EBEBEB;
+        @include medium{display:none;}
+        @include small{display:none;}
+        @include xs{display:none;}}
+.strv-car{position: absolute;
+    z-index:1;
+	left: 0;
+	right: 0;
+	bottom: -100px;
+	margin:0 auto;
+	max-width: 922px;
+    @include medium{display:none;}
+    @include small{display:none;}
+    @include xs{display:none;}}

@@ -1,0 +1,127 @@
+.main {
+  flex: 1; position:relative; min-height:100vh;   }
+
+/* Main Layout*/
+@include xs {
+.gridxs--hide{display:none;}
+.container {position:relative; max-width:964px; margin:0 auto; padding: 0;}
+.container-pad-mob {position:relative; max-width:964px; margin:0 auto; padding: 0 10px;}
+.gridxs--fit > .cell { flex: 1; }
+.gridxs--full > .cell {flex: 0 0 100%; }
+.gridxs--1of2 > .cell { flex: 0 0 50%; }
+.gridxs--1of3 > .cell { flex: 0 0 33.3333%; }
+.gridxs--1of4 > .cell { flex: 0 0 25%; }
+.gridxs--gutters > .cell { padding: 10px; }
+.u-xs-1of6 {
+  width: 30% !important;
+  flex: none !important;
+}
+.u-xs-4of6{
+  width: 70% !important;
+  flex: none !important;
+}
+}
+@include small {
+.grid--hide{display:none;}
+.container {position:relative; max-width:964px; margin:0 auto; padding: 0;}
+.container-pad-mob {position:relative; max-width:964px; margin:0 auto; padding: 0 10px;}
+.grid--fit > .cell { flex: 1; }
+.grid--full > .cell {flex: 0 0 100%; }
+.grid--1of2 > .cell { flex: 0 0 50%; }
+.grid--1of3 > .cell { flex: 0 0 33.3333%; }
+.grid--1of4 > .cell { flex: 0 0 25%; }
+.grid--gutters > .cell { padding: 10px; }
+.u-sm-1of6 {
+  width: 30% !important;
+  flex: none !important;
+}
+.u-sm-4of6{
+  width: 70% !important;
+  flex: none !important;
+}
+}
+@include medium {
+.gridmd--hide {display:none;}
+.container {position:relative; max-width:964px; margin:0 auto; padding:0;}
+.container-pad-mob {position:relative; max-width:964px; margin:0 auto; padding: 10px;}
+.gridmd--fit > .cell { flex: 1; }
+.gridmd--full > .cell {flex: 0 0 100%; }
+.gridmd--1of2 > .cell { flex: 0 0 50%; }
+.gridmd--1of3 > .cell { flex: 0 0 33.3333%; }
+.gridmd--1of4 > .cell { flex: 0 0 25%; }
+.grid--gutters > .cell { padding: 10px; }
+.u-medium-1of6 {
+  width: 10% !important;
+  flex: none !important;
+}
+.u-medium-4of6{
+  width: 90% !important;
+  flex: none !important;
+}
+}
+@include large {
+.gridlg--hide{display:none;}
+.container {position:relative; max-width:964px; margin:0 auto; padding:0;}
+.container-pad-mob {position:relative; max-width:964px; margin:0 auto; padding: 0;}
+.gridlg--fit > .cell { flex: 1; }
+.gridlg--full > .cell {flex: 0 0 100%; }
+.gridlg--1of2 > .cell { flex: 0 0 50%; }
+.gridlg--1of3 > .cell { flex: 0 0 33.3333%; }
+.gridlg--1of4 > .cell { flex: 0 0 25%; }
+.gridlg--1of5 > .cell { flex: 0 0 20%; }
+.gridlg--1of6 > .cell { flex: 0 0 16.6666666666%; }
+.grid--gutters > .cell { padding: 10px; }
+.u-large-1of6 {
+  width: 10% !important;
+  flex: none !important;
+}
+.u-large-4of6{
+  width:90% !important;
+  flex: none !important;
+}
+}
+@include xl {
+.gridxl--hide{display:none;}
+.container {position:relative; max-width:964px; margin:0 auto; padding:0;}
+.container-pad-mob {position:relative; max-width:964px; margin:0 auto; padding: 0;}
+.gridxl--fit > .cell { flex: 1; }
+.gridxl--full > .cell {flex: 0 0 100%; }
+.gridxl--1of2 > .cell { flex: 0 0 50%; }
+.gridxl--1of3 > .cell { flex: 0 0 33.3333%; }
+.gridxl--1of4 > .cell { flex: 0 0 25%; }
+.gridxl--1of5 > .cell { flex: 0 0 20%; }
+.gridxl--1of6 > .cell { flex: 0 0 16.6666666666%; }
+.gridxl--1of12 > .cell { flex: 0 0 8.3333333333%; }
+.grid--gutters > .cell { padding: 10px; }
+.grid--gutters20 > .cell { padding: 20px; }
+.u-xl-1of6 {
+  width: 10% !important;
+  flex: none !important;
+}
+.u-xl-4of6{
+  width: 90% !important;
+  flex: none !important;
+  display:flex;
+}
+}
+
+
+// Grid Styles
+.grid { position:relative; display: flex; flex-wrap: wrap; flex-direction:row ;list-style: none; margin: 0; padding: 0; }
+.cell { position:relative; flex:1;flex-direction: column; display:flex; text-align:left;
+}
+.cell-row { display:flex; flex: 1; flex-direction: row; display:flex; text-align:left; }
+/*--------- Generic styles ----------*/
+.grid--flexcells > .cell{display:flex;}
+.grid--top { align-items: flex-start; }
+.grid--bottom { align-items: flex-end; }
+.grid--center { align-items: center; text-align:left;}
+.grid--justifyCenter { justify-content: center; }
+.cell--top { align-self: flex-start; }
+.cell--bottom { align-self: flex-end; }
+.cell--center { align-self: center; }
+.flex-column{flex-direction:column;}
+.center { justify-content: center; align-items:center;} 
+.cell--autoSize { flex: none;}
+
+

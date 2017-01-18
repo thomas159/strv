@@ -1,0 +1,34 @@
+.get-your{padding:400px 0 10px 0;
+@include small{display:none;}
+@include xs{display:none;}}
+.get-your-mob{padding:260px 0 10px 0;
+@include xl{display:none;}
+@include large{display:none;}
+@include medium{display:none;}}
+.simple-footer{text-align:center; color:#fff;
+@include xs{display:none;}
+@include small{display:none;}}
+
+.simple-footer-mob{text-align:center; color:#fff;
+@include xl{display:none;}
+@include large{display:none;}
+@include medium{display:none;}
+}
+
+
+
+footer { padding:50px; background:#333; color:#fff; }
+.share{display:flex; @include centerer;}
+
+
+
+.icon{
+    margin-left:20px;
+    position:relative;
+    height:50px;
+    width:50px;
+    background:#fff;
+    border-radius:100%;
+}
+.social-icon{position:absolute; top:12px; left:16px;color:#333; }
+.social-icon-twitter{position:absolute; top:12px; left:14px;color:#333; }

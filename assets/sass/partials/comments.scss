@@ -1,0 +1,54 @@
+// Write Comments
+.write-comment{max-width:924px;min-height:120px; line-height:14px;background:#fff; box-shadow: 0px 2px 34px 0px rgba(221,221,221,1); padding:30px 80px; margin:10px auto; 
+@include small{padding:20px 30px;}
+@include xs{padding:20px 30px;}}
+.write-comment-avatar{ width:80px; height:70px; 
+@include xs{padding:0 0 30px 0;}
+@include small{padding:0 0 30px 0;}}
+.write-comment-comment{ width:80%; min-height:60px; background:#ff00ff;}
+.write-comment-left {
+  @include xl{width: 10% !important; flex: none !important;}
+  @include large{width: 10% !important; flex: none !important;}
+  @include medium{width: 10% !important; flex: none !important;}
+  @include small{flex: 0 0 100%;align-items:center;}
+  @include xs{flex: 0 0 100%; align-items:center;}
+}
+.write-comment-right{
+  width: 90% !important;
+  flex: none !important;
+  justify-content: center;
+  border-bottom:2px solid #f0f0f0;
+   background:url("../../../assets/img/submit.png") no-repeat 100% center;
+    @include small{flex: 0 0 100%; min-height:40px;background:none; text-align:center;}
+  @include xs{flex: 0 0 100%; min-height:60px;background:none; text-align:center;}
+}
+.reply-button{width:100%; text-align:center; padding:20px 0 0 0;
+@include xl{display:none}
+  @include large{display:none}
+  @include medium{display:none}
+}
+.cellb{display:flex;}
+// Number of Comments
+.comments-number{height:60px; padding:60px 0 80px 0; text-align:center;
+@include small{ padding:60px 0 40px 0; }
+@include xs{ padding:60px 0 40px 0; }}
+// Comments
+.comments-container{position:relative; margin: 0 auto; padding: 0; max-width:820px; padding:0;}
+
+.comments-comment{position:relative; max-width:100%;min-height:120px; background:#fff; box-shadow: 0px 2px 34px 0px rgba(221,221,221,1);margin:10px 0; padding:30px; }
+.comments-name{
+ display:flex;flex:1; align-items: center;
+}
+.comments-text{
+ margin-top:20px;
+}
+.reply{position:absolute; top:20px; right:30px; text-align:right;}
+
+// Comments sub comment
+.comments-comments-sub{max-width:100%;height:auto; background:#fff; box-shadow: 0px 2px 34px 0px rgba(221,221,221,1);margin:10px 0 10px 85px; padding:30px; border-left:3px solid $red;
+@include small{margin:10px 0}
+@include xs {margin:10px 0}}
+.comments-sub-name{
+ display:flex;flex:1; align-items: center; 
+}
+

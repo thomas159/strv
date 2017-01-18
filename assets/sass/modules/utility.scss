@@ -1,0 +1,66 @@
+$xs: 412px;
+$small: 767px;
+$medium: 1199px;
+$large: 1499px;
+$largetext: #f2f2f2;
+$red: #E43B40;
+@mixin centerer { align-items:center;justify-content: center;}
+@mixin center-left { align-items: center; text-align:left;}
+
+@mixin xs {
+  @media only screen and (max-width: $xs) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media only screen and (min-width: $xs + 1) and (max-width: $small){
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: $small + 1) and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $medium +1) and (max-width: $large) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (min-width: $large + 1) {
+    @content;
+  }
+}
+
+
+.button-wrap{margin:60px 0; text-align:center;}
+.btn {
+    height: auto;
+  padding:15px 70px 15px 20px;
+  border: 0;
+  margin:0;
+  background:$red url("../../../assets/img/arrow.png") no-repeat 90% center;
+  cursor: pointer;
+  transition:all 0.2s ease-out;
+  color:#fff;
+  text-transform:uppercase;
+  font-weight:700;
+  @include small{ padding:25px 70px 25px 20px;}
+  @include xs{ padding:25px 70px 25px 20px;}
+
+}
+
+
+.btn:hover {
+    height: auto;
+  border: 0;
+  margin:0;
+  background:#FF595E url("../../../assets/img/arrow.png") no-repeat 90% center;
+  cursor: pointer;
+  color:#fff;
+} 

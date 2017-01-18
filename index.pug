@@ -1,0 +1,178 @@
+doctype html
+html.no-js(lang='en')
+    head
+        include includes/head.pug
+    body
+       
+        .main
+            // header container
+            .fullcontainer
+                include includes/nav.pug
+               
+                .new-strv
+                    h1 New STRV M6
+                .new-strv-mob
+                    h1  New 
+                        br
+                        | STRV 
+                        br
+                        | M6
+                .simple-head
+                    h2 Simple Designy Car For Designers
+                .simple-head-mob
+                    h2
+                        | Simple Designy Car 
+                        br
+                        | For Designers
+                .button-wrap
+                        button.btn Leave a comment
+
+            // 
+            #sec01.fullcontainer
+                .section-header
+                    h3
+                        span.color 01
+                        br
+                        span.section About us
+                .grid.gridxs--full.grid--full.gridmd--1of2.gridlg--1of2.gridxl--1of2
+                    .cell
+                        .hand
+                            | HAND
+                    .cell 
+                        .made
+                            | MADE
+            // 
+            .fullcontainer
+                .block-wrap-container
+                    .block-wrap
+                        .grid.grid--gutters.gridxs--full.grid--full.gridmd--1of3.gridlg--1of3.gridxl--1of3
+                            .cell
+                                .about-img
+                                    img(src='../../../assets/img/brush.png')
+                                .about-text-wrap    
+                                    .about-title
+                                        h4 
+                                            | Designed by 
+                                            br
+                                            | 10 STRV Designers
+                                    .about-text
+                                        p Every piece of this car is handmade. Our 10 designers check Pintrest, dribble and Behance and did this awesome car!
+                            .cell
+                                .about-img
+                                    img(src='../../../assets/img/flower.png')
+                                .about-text-wrap    
+                                    .about-title
+                                        h4 
+                                            | Nature Handcraft
+                                            br
+                                            | Materials
+                                    .about-text
+                                        p We are using natural recyclable materials like wood from our forest or co-operate with DannyP brand and his awesome leather stuff
+                            .cell
+                                .about-img
+                                    img(src='../../../assets/img/heart.png')
+                                .about-text-wrap    
+                                    .about-title
+                                        h4 
+                                            | Only 20 Pieces 
+                                            br
+                                            | in the world!
+                                    .about-text
+                                        p Designer is a human, right? Handmade things takes a lot of time and energy. Every designer has 2 cars in his pocket. So hurry up!
+                .svgdiv
+                    svg#bigTriangleColor(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='200', viewbox='0 0 100 102', preserveaspectratio='none')
+                        path(d='M0 0 L35 100 L100 0 Z')
+         
+            // Projects container
+            #sec02.fullcontainer
+                .section-header
+                        h3
+                            span.color 02
+                            br
+                            span.section How it Works
+                .container
+                    .grid.grid--gutters.gridxs--full.grid--full.gridmd--1of3.gridlg--1of3.gridxl--1of3
+                        .cell.border
+                            .how-heading
+                                h4
+                                    | Pick Your 
+                                    br 
+                                    | Favourite Designer
+                            .number-wrap
+                                .number
+                                    | 1
+                        .cell.border
+                            .how-heading
+                                h4
+                                    | Give Him $3M
+                                    br 
+                                    | in Fancy Suitcase
+                            .number-wrap
+                                .number
+                                    | 2
+                        .cell
+                            .how-heading
+                                h4
+                                    | Wait for the
+                                    br 
+                                    | Masterpiece
+                            .number-wrap
+                                .number
+                                    | 3
+                    .grid.grid--gutters.gridxs--full.grid--full.gridmd--full.gridlg--full.gridxl--full
+                        .cell
+                            .button-wrap
+                                button.btn Choose Your Designer    
+                .container       
+                    .strv-car-text
+                        | STRV M6
+                    .strv-car
+                        img(src='../../../assets/img/car.png')
+            // Comments container
+            #sec03.fullcontainer
+                .section-header
+                    h3
+                        span.color 03
+                        br
+                        span.section Comments
+                .container-pad-mob
+                    include includes/comments.pug
+                   
+                    
+            // car img bottom
+
+            #sec03.fullcontainer
+                .container
+                    .get-your
+                        h1 Get Your STRV M6
+                    .get-your-mob
+                        h1
+                            | Get
+                            br
+                            | Your
+                            br
+                            | STRV
+                            br
+                            | M6
+                    .simple-footer
+                        h2 Simple Designy Car For Designers
+                    .simple-footer-mob
+                        h2
+                            | Simple Designy Car 
+                            br
+                            | For Designers
+                    .button-wrap
+                            button.btn Build your own    
+
+        // Footer
+        footer
+            .grid.grid--gutters.gridxs--full.grid--full.gridmd--full.gridlg--full.gridxl--full
+                .cell
+                    .share 
+                        | SHARE ON
+                        .icon
+                            i.fa.fa-facebook.fa-2x.social-icon(aria-hidden='true')
+                        .icon
+                            i.fa.fa-twitter.fa-2x.social-icon-twitter(aria-hidden='true')
+                        
+    script(src='assets/js/scripts.js')

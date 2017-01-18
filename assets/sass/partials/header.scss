@@ -1,0 +1,21 @@
+.new-strv{padding:270px 0 20px 0;
+@include small{display:none;}
+@include xs{display:none;}}
+.new-strv-mob{padding:100px 0 20px 0;
+@include xl{display:none;}
+@include large{display:none;}
+@include medium{display:none;}}
+
+
+.simple-head{text-align:center; color:#fff;
+@include xs{display:none;}
+@include small{display:none;}}
+
+.simple-head-mob{text-align:center; color:#fff;
+@include xl{display:none;}
+@include large{display:none;}
+@include medium{display:none;}
+}
+
+
+// nav
